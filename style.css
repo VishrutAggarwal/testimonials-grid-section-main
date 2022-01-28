@@ -42,7 +42,7 @@ body {
     background-color: var(--light-grayish-blue);
     font-family: var(--ff-barlow-semi-condensed);
     font-weight: var(--fw-regular);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
@@ -53,17 +53,16 @@ main {
                          "three four four five";
     grid-gap: 25px;
     width: 1000px;
-    height: 550px;
     font-size: 13px;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
-    padding: 30px;
     gap: 10px;
+    padding: 25px;
 }
 
 footer {
@@ -136,4 +135,22 @@ footer a {
     border-radius: 50%;
     width: 30px;
     height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1fr 1fr 1.75fr 2fr;
+        grid-template-areas: "one"
+                            "two"
+                            "three"
+                            "four"
+                            "five";
+        width: 282px;
+        margin: 4rem;
+    }
+
+    footer {
+        position: relative;
+    }
 }
