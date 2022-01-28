@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+
+    /* Colors */
+
+    /* Primary */
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --white-opacity-50: hsla(0, 0%, 100%, 0.5);
+
+    /* Neutral */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* Font */
+
+    /* Font Family */
+    --ff-barlow-semi-condensed: "barlow semi condensed";
+
+    /* Font Weight */
+    --fw-regular: 500;
+    --fw-semi-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    font-family: var(--ff-barlow-semi-condensed);
+    font-weight: var(--fw-regular);
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one one two five"
+                         "three four four five";
+    grid-gap: 25px;
+    width: 1000px;
+    height: 550px;
+    font-size: 13px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    font-size: .8rem;
+    color: var(--very-dark-blackish-blue);
+    gap: 30px;
+}
+
+footer a {
+    color: var(--very-dark-blackish-blue);
+}
+
+/* Individuals */
+
+#testimonial-1 {
+    background-color: var(--moderate-violet);
+    grid-area: one;
+    color: var(--white);
+}
+
+#testimonial-2 {
+    background-color: var(--very-dark-grayish-blue);
+    grid-area: two;
+    color: var(--light-grayish-blue);
+}
+
+#testimonial-3 {
+    background-color: var(--white);
+    grid-area: three;
+    color: var(--very-dark-blackish-blue);
+}
+
+#testimonial-4 {
+    background-color: var(--very-dark-blackish-blue);
+    grid-area: four;
+    color: var(--light-grayish-blue);
+}
+
+#testimonial-5 {
+    background-color: var(--white);
+    grid-area: five;
+    color: var(--very-dark-blackish-blue);
+}
+
+/* Formatting */
+
+.header {
+    display: flex;
+    gap: 12px;
+}
+
+.testimonial-heading {
+    font-weight: var(--fw-semi-bold);
+    font-size: 1.1rem;
+}
+
+.testimonial-body {
+    opacity: 70%;
+}
+
+.designation {
+    opacity: 50%;
+}
+
+.pfp {
+    border: 2px solid var(--white-opacity-50);
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+}
