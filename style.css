@@ -111,6 +111,15 @@ footer a {
     color: var(--very-dark-blackish-blue);
 }
 
+#bg-image {
+    position: absolute;
+    margin-left: 290px;
+    margin-top: -80px;
+    height: 90px;
+    width: 100px;
+    z-index: 0;
+}
+
 /* Formatting */
 
 .header {
@@ -121,6 +130,7 @@ footer a {
 .testimonial-heading {
     font-weight: var(--fw-semi-bold);
     font-size: 1.1rem;
+    z-index: 1;
 }
 
 .testimonial-body {
@@ -137,21 +147,27 @@ footer a {
     width: 30px;
     height: auto;
 }
-
 @media screen and (max-width: 600px) {
     main {
         grid-template-columns: 1fr;
         grid-template-rows: 1.8fr 1fr 1fr 1.75fr 2fr;
         grid-template-areas: "one"
-                            "two"
-                            "three"
-                            "four"
-                            "five";
+        "two"
+        "three"
+        "four"
+        "five";
         width: 282px;
         margin: 4rem;
     }
-
+    
     footer {
         position: relative;
+    }
+    
+    #bg-image {
+        margin-left: 140px;
+        margin-top: -138px;
+        height: 90px;
+        width: 100px;
     }
 }
