@@ -170,4 +170,8 @@ footer a {
         height: 90px;
         width: 100px;
     }
+
+    section {
+        box-shadow: 5px 5px 50px 10px var(--light-gray);
+    }
 }
