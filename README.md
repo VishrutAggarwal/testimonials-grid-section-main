@@ -40,8 +40,8 @@ Mobile View:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/VishrutAggarwal/testimonials-grid-section-main)
-- Live Site URL: [Add live site URL here](https://vishrutaggarwal.github.io/testimonials-grid-section-main/)
+- Solution URL: [Github Repository](https://github.com/VishrutAggarwal/testimonials-grid-section-main)
+- Live Site URL: [Github Pages](https://vishrutaggarwal.github.io/testimonials-grid-section-main/)
 
 ## My process
 
